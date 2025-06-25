@@ -1,0 +1,7 @@
+[serve.static]
+plugins = ["bun-plugin-tailwind"]
+
+[install.cache]
+
+dir = "./cache/bun"
+disable = false
