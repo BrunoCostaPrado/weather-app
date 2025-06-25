@@ -4,7 +4,7 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"build": "next build",
+		"build": "rm -rf out && rm -rf src-tauri/target/   && next build",
 		"db:push": "drizzle-kit push",
 		"db:std": "drizzle-kit studio",
 		"dev": "next dev --turbo",
@@ -12,6 +12,7 @@
 		"postinstall": "patch-package",
 		"preview": "next build && next start",
 		"start": "next start",
+		"tauri": "tauri",
 		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
@@ -31,6 +32,7 @@
 	"devDependencies": {
 		"@biomejs/biome": "2.0.5",
 		"@tailwindcss/postcss": "^4.1.10",
+		"@tauri-apps/cli": "^2.6.0",
 		"@types/bun": "^1.2.17",
 		"@types/node": "^24.0.3",
 		"@types/react": "^19.1.8",
@@ -44,5 +46,9 @@
 	},
 	"ct3aMetadata": {
 		"initVersion": "7.39.3"
-	}
+	},
+	"browserslist": [
+		"defaults and fully supports es6-module",
+		"maintained node versions"
+	]
 }

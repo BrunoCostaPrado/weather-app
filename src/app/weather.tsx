@@ -25,9 +25,9 @@ export async function Weather() {
 	return (
 		<div>
 			<Table>
-				<TableCaption>Weather</TableCaption>
+				<TableCaption className="text-black">Weather</TableCaption>
 				<TableHeader>
-					<TableRow>
+					<TableRow className="text-[15px] text-zinc-300">
 						<TableHead>Current Temp</TableHead>
 						<TableHead>Apparent Temperature</TableHead>
 						<TableHead>Rain Chance</TableHead>
